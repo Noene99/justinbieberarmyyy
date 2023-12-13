@@ -6,6 +6,10 @@ body {
   padding:0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* header */
 
 header {
@@ -57,9 +61,7 @@ footer a {
 
 
 
-img {
-  max-width: 100%;;
-}
+
 
 .button-1 {
   display:block;
