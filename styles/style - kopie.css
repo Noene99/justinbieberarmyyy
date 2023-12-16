@@ -222,13 +222,12 @@ footer a:hover {
 
 .flexcontainer-muziek {
   display: flex;
-  flex-flow: row nowrap;
+  flex: row;
   justify-content: center;
-  width: 100vw;
-
-  
+  width: 100vw;  
 }
 
+/*
 .muziek-grid {
   display: flex;
   flex-wrap: wrap;
@@ -237,7 +236,7 @@ footer a:hover {
   gap: 1em;
   width:70vw;
 }
-
+*/
 
 ul img {
   height:250px;
@@ -272,14 +271,12 @@ ul img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 75vh;
-  gap: 1em;
   list-style-type: none;
-  justify-content: flex-start;
-  width:70vw;
+  width:60vw;
+  padding: 0;
+  gap: 2em;
 }
-/*tekstje in het midden*/
+
 .con {
   background-color: #8000ff;
   position: relative;
@@ -300,44 +297,10 @@ ul img {
   opacity: 1;
 }
 
-/*inzoomen grid */
-.zoomable-container {
-  overflow: hidden;
-  position: relative;
+.red-box p {
+  font-size: 10em;
+  background-color: aliceblue;
+  width: 1vw;
+  margin: 0em;
 }
 
-.zoomable-image {
-  transition: transform 0.3s;
-}
-
-.zoomable-container:hover .zoomable-image {
-  transform: scale(1.1);
-}
-
-/*donkerder*/
-.image-container {
-  position: relative;
-  overflow: hidden;
-  display: inline-block; /* Zorgt ervoor dat de container de grootte van de afbeelding behoudt */
-}
-
-.hover-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Donkere semi-transparante kleur */
-  opacity: 0; /* Start onzichtbaar */
-  transition: opacity 0.3s; /* Voeg een overgangseffect toe voor een vloeiende verandering */
-}
-
-.image-container:hover .hover-overlay {
-  opacity: 1; /* Maak de overlay zichtbaar bij hover */
-}
-
-.image-container img {
-  width: 100%; /* Zorg ervoor dat de afbeelding de volledige grootte van de container inneemt */
-  height: auto;
-  display: block; /* Verwijder eventuele extra ruimte onder de afbeelding */
-}
