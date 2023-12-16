@@ -1,9 +1,9 @@
 body {
   color: #414141;               
   background-color: #ffffff;    
-  font-family: sans-serif;
+  font-family: sans-serif, arial, helvetica;
   margin: 0;
-  padding:0;
+  padding: 0;
 /*  display: flex;
   height: 100%;
   margin: 0 auto;
@@ -33,7 +33,11 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border:#414141 1px solid
+  border:#414141 1px solid;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 3;
 }
 
 /*
@@ -80,6 +84,9 @@ header ul a:active {
 }
 
 /*main*/
+main {
+  margin-top: 15vh;
+}
 .flexcontainer-homepage {
   display: flex;
   flex-direction: column-reverse;
@@ -89,10 +96,15 @@ header ul a:active {
 
 
 
-.opmaak-h2 {
-  margin: 0em 0em;
+.opmaak-h2, h1 {
+  margin: 0em;
+  padding: 0em;
   font-size: 10em;
   color: #dcdcdc;
+}
+
+h1 {
+  font-size:5em;
 }
 
 
@@ -161,13 +173,17 @@ footer a:hover {
 .flexcontainer-muziek-homepage img {
   height: 400px;
   width: auto;
+  margin-right: 3em;
 }
 
-
-
-.flexitem-snooze {
-  margin: 1em;
+.flexcontainer-muziek-homepage h3  {
+  font-size: 3em;
+  margin-bottom: 0em;
 }
+
+.luister {
+  color: #8000ff;
+} 
 
 
 /*section 3 sandra's plakboek */
@@ -181,10 +197,16 @@ footer a:hover {
   justify-content: center;
 }
 
-.flexitem-fotoreeks {
+.flexcontainer-sandra-plakboek-homepage img {
   width: auto;
   height: 250px;
   margin: 1em;
+}
+
+.container-meer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .meer {
@@ -193,15 +215,32 @@ footer a:hover {
   border-radius: 30px;
   color:black;
   background-color: white;
-  margin-left: 40em;
 }
 
 /*muziek*/
+
+.flexcontainer-muziek {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100vw;
+
+  
+}
+
+.muziek-grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: flex-start;
+  gap: 1em;
+  width:70vw;
+}
+
 ul img {
   height:250px;
   width: 250px;
 }
-
 .button-1 {
   display:block;
   margin:1em;
@@ -211,7 +250,6 @@ ul img {
   Background: gray;
   color:white;
   max-width: fit-content;
-
 }
 
 #blokjes {
@@ -219,11 +257,7 @@ ul img {
   justify-content:space-between;
 }
 
-.muziek-grid {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
+
 
 .keuze {
   display: flex;
