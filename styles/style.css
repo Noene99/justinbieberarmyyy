@@ -224,25 +224,24 @@ footer a:hover {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  width: 100vw;
-
-  
+  width: 100vw;  
 }
 
+
 .muziek-grid {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: flex-start;
   gap: 1em;
   width:70vw;
+  height: 75vh;
 }
 
 
-ul img {
-  height:250px;
-  width: 250px;
-}
+
+
 .button-1 {
   display:block;
   margin:1em;
@@ -267,77 +266,59 @@ ul img {
   list-style-type: none;
 }
 
-.con1 {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-  gap: 1em;
-  list-style-type: none;
-  justify-content: flex-start;
-  width:70vw;
-}
-/*tekstje in het midden*/
-.con {
-  background-color: #8000ff;
-  position: relative;
-  overflow: hidden;
-}
 
 
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 2%;
-  transition: opacity 0.3s;
-}
+/*nieuw*/
 
-.con:hover .overlay-text {
-  opacity: 1;
-}
+    /* Style for the image container */
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      background-color: #8000ff;
+    }
 
-/*inzoomen grid */
-.zoomable-container {
-  overflow: hidden;
-  position: relative;
-}
+    /* Style for the image */
+    .zoom-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.4s ease; /* Add a smooth transition effect for zooming */
+      height:16em;
+      width: 16em;
+    }
 
-.zoomable-image {
-  transition: transform 0.3s;
-}
+    /* Overlay that will make the image darker */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* Adjust the opacity to control darkness */
+      opacity: 0; /* Initially invisible */
+      transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity */
+    }
 
-.zoomable-container:hover .zoomable-image {
-  transform: scale(1.1);
-}
+    /* Style for the text in the middle */
+    .tekstinhetmidden {
+      padding: 0em;
+      margin: 0em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; /* Adjust text color */
+      font-size: 1.3em; /* Adjust font size */
+      opacity: 0; /* Initially invisible */
+      transition: opacity 0.7s ease; /* Add a smooth transition effect for opacity */
+    }
 
-/*donkerder*/
-.image-container {
-  position: relative;
-  overflow: hidden;
-  display: inline-block; /* Zorgt ervoor dat de container de grootte van de afbeelding behoudt */
-}
+    .image-container:hover .zoom-image {
+      transform: scale(1.05);
+    }
 
-.hover-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Donkere semi-transparante kleur */
-  opacity: 0; /* Start onzichtbaar */
-  transition: opacity 0.3s; /* Voeg een overgangseffect toe voor een vloeiende verandering */
-}
+    .image-container:hover .overlay,
+    .image-container:hover .tekstinhetmidden {
+      opacity: 1;
+    }
 
-.image-container:hover .hover-overlay {
-  opacity: 1; /* Maak de overlay zichtbaar bij hover */
-}
-
-.image-container img {
-  width: 100%; /* Zorg ervoor dat de afbeelding de volledige grootte van de container inneemt */
-  height: auto;
-  display: block; /* Verwijder eventuele extra ruimte onder de afbeelding */
-}
