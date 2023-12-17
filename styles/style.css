@@ -19,6 +19,8 @@ a {
   text-decoration: none;
 }
 
+
+
 #logo {
   margin-left: 1em;
 }
@@ -224,7 +226,8 @@ footer a:hover {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  width: 100vw;  
+  width: 100vw; 
+  margin-top: 4em; 
 }
 
 
@@ -240,35 +243,6 @@ footer a:hover {
 }
 
 
-
-
-.button-1 {
-  display:block;
-  margin:1em;
-  padding: 2em;
-  border: 1px black solid;
-  border-radius: 5px;
-  Background: gray;
-  color:white;
-  max-width: fit-content;
-}
-
-#blokjes {
-  display: flex;
-  justify-content:space-between;
-}
-
-
-
-.keuze {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-
-
-
-/*nieuw*/
 
     /* Style for the image container */
     .image-container {
@@ -321,4 +295,93 @@ footer a:hover {
     .image-container:hover .tekstinhetmidden {
       opacity: 1;
     }
+
+/*over jb*/
+.button-1 {
+  display:block;
+  margin:1em;
+  padding: 2em;
+  border: 1px black solid;
+  border-radius: 5px;
+  Background: gray;
+  color:white;
+  max-width: fit-content;
+}
+
+#blokjes {
+  display: flex;
+  justify-content:space-between;
+}
+
+
+
+.keuze {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+/*Sandra's plakboek*/
+.margin-left {
+  margin-left: 5%;
+}
+
+.container-believe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;;
+}
+
+.containeritemsbelieve {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80vw;
+  height: auto;
+  justify-content: center;
+}
+
+.container-believe img {
+  width: auto;
+  height: 250px;
+}
+
+.container-believe h3 {
+  margin: 0 0 0 0px
+}
+
+
+
+.container-kunst {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100vw;
+  gap: 2em;
+}
+
+.container-kunst article {
+  width: 30vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.container-kunst div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 0.1em;
+  background-color: white;
+  bottom: 0;
+  position: sticky;
+}
+
+.container-kunst img {
+width: auto;
+height: 300px;
+display: block;
+position: relative;
+}
 
