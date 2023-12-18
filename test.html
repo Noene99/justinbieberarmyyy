@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheets.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header with Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      background-color: whitesmoke;
+      color: #414141;
+      padding: 0px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: palegoldenrod;
+      padding: 0px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      list-style-type: none;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 20px 40px;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #f7c5ff;
+    }
+  </style>
 </head>
 <body>
-    <div class="image-container">
-        <img class="zoom-image" src="../justinbieberarmyyy/images/snooze-album-cover.jpg" alt="Your Image">
-        <div class="overlay"></div>
-        <div class="centered-text">Your Text</div>
-      </div>
 
-      <div class="image-container">
-        <img class="zoom-image" src="../justinbieberarmyyy/images/snooze-album-cover.jpg" alt="Your Image">
-        <div class="overlay"></div>
-        <div class="centered-text">Your Text</div>
-      </div>
-
-      <div class="image-container">
-        <img src="../justinbieberarmyyy/images/snooze-album-cover.jpg" alt="Your Image">
-        <div class="hover-overlay"></div>
-      </div>
-
-      <div class="zoomable-container">
+<header>
+  <div>
+    <p>
         <a href="index.html">
-            <img class="zoomable-image" src="../justinbieberarmyyy/images/believe-acoustic-album-cover.jpg" alt="Believe Album Cover">
+            <img id="logo" src="../justinbieberarmyyy/images/logo.png" alt="Justin Bieber Army">
         </a>
-    </div>
-    <div class="overlay-text">
-        <h2>Believe Acoustic</h2>
-    </div>
+    </p>
+  </div> 
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
 </body>
 </html>
