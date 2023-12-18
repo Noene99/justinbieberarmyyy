@@ -406,14 +406,6 @@ footer a:hover {
   margin-bottom: 3em;
 }
 
-.containeritemsbelieve {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 80vw;
-  height: auto;
-  justify-content: center;
-}
-
 .container-believe img {
   width: auto;
   height: 250px;
@@ -423,7 +415,28 @@ footer a:hover {
   margin: 0 0 0 0px
 }
 
+.containeritemsbelieve {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80vw;
+  height: auto;
+  justify-content: center;
+}
 
+.containeritemsbelieve img {
+  width: auto;
+  height: 260px;
+}
+
+.believevideo {
+  width: 497px;
+  height: auto;
+}
+
+.purposevideo {
+  width: 520px;
+  height: auto;
+}
 
 .container-kunst {
   display: flex;
@@ -453,8 +466,8 @@ footer a:hover {
 }
 
 .container-kunst img {
-width: auto;
-height: 300px;
+width: 210px;
+height: auto;
 display: block;
 position: relative;
 }
